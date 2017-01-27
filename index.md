@@ -4,9 +4,14 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
 ---
-## Test theme
+## The Big Move
 
-1. List item 1
-2. List item 2
+In May, 2016 ...
+
+## MOOCs
+
+A total game-changer
+
+## Other thoughts
 
 
