@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: From IC Designer to AI Designer
+title: Learning AI Design
 email: pcoady@alum.mit.edu
 description: > 
-  My journey from Integrated Circuit designer to Artificial Intelligence designer.
+  Journey from Analog Integrated Circuit designer to Artificial Intelligence designer.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb

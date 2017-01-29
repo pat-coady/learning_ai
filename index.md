@@ -4,14 +4,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
 ---
-## The Big Move
+## Under Construction
 
-In May, 2016 ...
-
-## MOOCs
-
-A total game-changer
-
-## Other thoughts
 
 
