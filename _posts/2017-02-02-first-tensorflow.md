@@ -1,14 +1,18 @@
 ---
 layout: post
-title:  "First Tensor Flow Project"
-date:   2017-02-02 16:28:38 -0700
+title: "First Tensor Flow Project"
+date: 2017-02-02 16:28:38 -0700
 categories: projects
 ---
-I've built a few neural nets by hand: using Octave and also in Python with numpy. And I've also used "canned" routines in both R and Python. And, most recently, I've built slightly more sophisticated networks using Keras (which can be configured to use either Theano or TensorFlow).
+For those that want to skip the preliminaries, go directly to the project page:
 
-While taking Geoff Hinton's Neural Network course, I became interested in using NNs to learn word-embedding vectors. I had a difficult time getting Keras do things like tying weights and merging and splitting tensors. Since I was already curious about TensorFlow, I decided it was time to built a project using it.
+[Sherlock Holmes Word Vectors](https://pat-coady.github.io/word2vec/)
 
-This GitHub Project Page summarizes my work:
+## Background
 
-https://pat-coady.github.io/word2vec/
+My neural network learning progression followed the typical path. I began by building networks using matrix operations in both Octave and Python. It is very satisfying to build a network from scratch and have it perform respectably on the MNIST digit recognition problem. This is also the best (only?) way to truly understand back-propagation, regularization, gradient descent, weight initialization and different optimization algorithms.
+
+Next I moved to the neural net packages in R and Python ([sklearn](http://scikit-learn.org/stable/) and [Keras](https://keras.io/)). This is the way to go when you're ready to try different data sets, layer sizes, optimizers and so on. With these packages, you can efficiently do hyper-parameter searches and run parallel jobs.
+
+I recently finished Geoff Hinton's Neural Network course on [Coursera](https://www.coursera.org/) (excellent, by the way). The section on using NNs to learn word vectors was fascinating and I wanted to give it a try myself. Around the same time I became curious about TensorFlow. So, it was time to kill two birds with one stone.
 
