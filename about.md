@@ -4,12 +4,6 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I’ve had a successful and rewarding career developing high-performance mixed-signal ICs: first as a circuit designer, then as director of engineering and, most recently, leading an advanced R&D team. Now I am devoting my energies towards a different field: artificial intelligence (AI) and machine learning. I am inspired by both the progress and the potential of these technologies.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+Presently, I am taking coursework, reading books and journals, and preparing to participate in AI competitions and challenges. My goal is to build expertise quickly and join a team where I can make a big difference – ideally combining my newly acquired AI expertise with my electronics and engineering experience.
