@@ -16,7 +16,7 @@
 title: "Learning Artificial Intelligence"
 email: pcoady@alum.mit.edu
 description: > # this means to ignore newlines until "baseurl:"
-  A chronical of my journey from a mixed-signal IC designer to an Artificial Intelligence designer.
+  From IC designer to AI designer.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pat-coady.github.io/"
 #twitter_username: jekyllrb
