@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "First Tensor Flow Project"
+title: "First TensorFlow Project"
 date: 2017-02-02 16:28:38 -0700
 categories: projects
 comments: true

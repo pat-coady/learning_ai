@@ -24,7 +24,7 @@ github_username:  pat-coady
 
 # Build settings
 markdown: kramdown
-theme: minima
+#theme: minima
 #gems:
 #  - jekyll-feed
 exclude:
