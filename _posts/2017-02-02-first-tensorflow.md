@@ -5,7 +5,9 @@ date: 2017-02-02 16:28:38 -0700
 categories: projects
 comments: true
 ---
-I recently completed a project using TensorFlow to learn word vectors from 3 *Sherlock Holmes* books. The code can be easily modified to "read" other books from [Project Gutenberg](https://www.gutenberg.org/). This project also contains some handy routines for exploring the learned word vectors. Here is what I found:
+I recently completed a project using TensorFlow to learn word vectors from 3 *Sherlock Holmes* books. The code can be easily modified to "read" other books from [Project Gutenberg](https://www.gutenberg.org/). This project also contains some handy routines for exploring the learned word vectors.
+
+Here is what I found:
 
 [Sherlock Holmes Word Vectors](https://pat-coady.github.io/word2vec/)
 

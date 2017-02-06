@@ -5,8 +5,6 @@ date: 2017-02-04 16:28:38 -0700
 categories: projects
 comments: true
 ---
-## Overview
-
 A few months ago I jumped into a Kaggle competition at the last minute. My laptop didn't have enough memory to handle the data set. And, I wanted more CPUs to throw at the problem. So now I had a great excuse to get myself set up to use Amazon cloud computing.
 
 ## Sign up for AWS Account
