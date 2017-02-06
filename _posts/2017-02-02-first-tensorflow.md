@@ -25,18 +25,7 @@ The TensorFlow API was intuitive and relatively easy to learn. The installation 
 
 If you want ultimate flexibility and control over your neural networks, using TensorFlow is the right tool. I've never used Theano, so I can't offer a comparison on performance or ease of use. But it seems the TensorFlow ecosystem is growing quickly (including support for Android, iOS and Raspberry Pi). If you are machine learning practitioner that uses established neural network archtectures, then I would would recommend using Keras.
 
-{% if page.comments %}
-<div id="disqus_thread"></div>
-<script>
-var disqus_config = function () {
-this.page.url = 'https://pat-coady.github.io/projects/2017/02/04/projects/2017/02/02/first-tensorflow.html';
-};
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = '//https-pat-coady-github-io.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% if site.disqus.shortname %}
+  {% include disqus_comments.html %}
 {% endif %}
+

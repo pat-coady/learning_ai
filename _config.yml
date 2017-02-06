@@ -23,6 +23,10 @@ url: "https://pat-coady.github.io/"
 #twitter_username: jekyllrb
 github_username:  pat-coady
 
+# Disqus Comments
+disqus:
+    shortname: https-pat-coady-github-io
+
 # Build settings
 markdown: kramdown
 #theme: minima
