@@ -35,7 +35,7 @@ Here I have selected all the default options except I have selected *Protect aga
 EBS-optimized instances provide better data throughput to the SSD storage. You can optionally select this.
 
 ## Add Storage
-I am starting with 100GB of General Purpose SSD (GP2) storage. I have unclicked the *Delete on Termination* box - this is important. The alternative is to take a snapshot of your machine before terminating your instance. Or, mounting a drive with your software installations. This these are manageable approaches, but a pain I think.
+I am starting with 100GB of General Purpose SSD (GP2) storage. I have unclicked the *Delete on Termination* box - this is important. The alternative is to take a snapshot of your machine before terminating your instance. Or, mounting a drive with your software installations. These are manageable approaches, but a pain I think.
 
 **Note:** This approach costs more money, because your storage is always set aside. The cost is on the order of $0.10/GB/month.
 
