@@ -15,7 +15,7 @@ I felt I had a good understanding of Recurrent Neural Networks (RNNs). But you d
 
 ## RNN Architecture
 
-The Internet is filled with examples character-based RNNs. And, I can understand why: it is amazing to see a computer learn to contruct sentences character-by-character. There is even an [example of a RNN generating C code](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) after training on the Linux code base. The character-based approach also has the practical benefit of only needing a ~40-way softmax (alphabet plus some punctuation). But humans read, write, and think in whole words. So I trained my RNN on sequences of words. 
+The Internet is filled with examples character-based RNNs. And, I can understand why: it is amazing to see a computer learn to contruct sentences character-by-character. There is even an [example of a RNN generating C code](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) after training on the Linux code base. The character-based approach also has the practical benefit of only needing a ~40-way softmax (alphabet plus some punctuation). But we think in whole words, not letters. So I trained my RNN on sequences of words. 
 
 <div style="border: 1px solid black; display: inline-block; padding: 15px; margin: 15px; margin-left: 0px;" markdown="1">
 ![Architecture]({{ site.url }}/assets/rnn_and_tensorboard/rnn_diagram.png)
@@ -23,16 +23,16 @@ The Internet is filled with examples character-based RNNs. And, I can understand
 
 The architecture is straightforward:
 
-    1. An embedding layer between one-hot word encoding and RNN
-    2. RNN: Basic RNN (no memory), GRU or LSTM cell
-    3. The last output of the RNN is picked off and fed to a hidden layer
-    4. N-way Softmax (N = vocabulary size)
+1. Embedding layer between the one-hot word encoding and the RNN
+2. RNN: Basic RNN or gated-cell (GRU or LSTM)
+3. Hidden layer fed by final RNN output
+4. N-way softmax (N = vocabulary size)
 
 ## TensorBoard
 
 For no good reason I had never tried TensorBoard. I was content to pull results from the graph and use matplotlib. But, as I mentioned above, I saw a great TensorBoard demo at the [TensorFlow Dev Summit](https://events.withgoogle.com/tensorflow-dev-summit/). So I decided to give it a try.
 
-From time to time we're all guilty of hacking at a problem. There is an energy barrier to adding probes to your model, re-running the job and figuring out what is going on. So, we hack at it for a little (too long) and hope we get lucky. TensorBoard makes it easy to be disciplined. It is simple to monitor tensor summaries or custom scalar summaries. Afterward you can compare runs and even examine your graph construction. In fact, you may as well monitor "everything" right from the start - then it is there when you need it.
+From time to time we're all guilty of hacking at a problem. There is an energy barrier against adding probes to your model, re-running the job and figuring out what is going on. So, we hack at it for a little (too long) and hope we get lucky. TensorBoard makes it easy to be disciplined. It is simple to monitor tensor summaries or custom scalar summaries. You can then compare runs and even examine your graph construction. In fact, you may as well monitor "everything" right from the start - then the information is ready when you need it.
 
 Let's start by looking at the graph:
 
@@ -46,7 +46,7 @@ It is very easy to explore the heirarchy of the design. Here we zoom into our hi
 ![TensorFlow Graph - zoom]({{ site.url }}/assets/rnn_and_tensorboard/graph_zoom.png)
 </div>
 
-The graph construction looks correct, now we can examine the training results. As you'd expect, you can overlay multiple training-loss curves. You can zoom and easily display the values at the cursors. There is a nice curve smoothing adjustment. And if you have many runs, there is a regular expression filter to grab just the curves you want.
+The graph construction looks correct, now we can examine the training results. As you'd expect, you can overlay multiple training-loss curves. You can zoom and easily display the values at the cursors. And if you have many runs, there is a regular expression filter to grab just the plots you want.
 
 Here I'm taking a look at batch-loss for various hyperparameter settings:
 
@@ -54,7 +54,7 @@ Here I'm taking a look at batch-loss for various hyperparameter settings:
 ![Animated training loss]({{ site.url }}/assets/rnn_and_tensorboard/loss.gif)
 </div>
 
-The horizontal axis can be adjusted to reflect CPU time or wall clock time. This highlights cases where a model trains in much fewer batches, but is still ultimately slower (Adam optimization seems to give me this problem).
+The horizontal axis units can be training step, relative CPU time or wall clock time. Relative CPU time highlights cases where a model trains in fewer batches, but is still ultimately slower.
 
 Let's dig deeper into the results. In this series of loss curves you can see 2 runs got stuck on a plateau:
 
@@ -68,31 +68,33 @@ Can we figure out what happened? Lets look at some histograms:
 ![rnn_out histograms]({{ site.url }}/assets/rnn_and_tensorboard/rnn_out.png)
 </div>
 
-As the histograms layer "towards you" they show the evolution of the training. In the upper-left plot, we can see many of the RNN activations (i.e. tanh outputs) are pegged at +/-1. 
+The histograms layer "towards you" to show the evolution of the training. In the upper-left plot, we can see many of the RNN activations (i.e. tanh outputs) are pegged at +/-1. 
 
-The situation is even worse at the hidden layer. Back-propagation isn't going to be able to make it through this - again, upper-left plot:
+The situation is even worse at the hidden layer - almost all the activations are saturated. Back-propagation isn't going to be able to make it through this (again, the upper-left plot):
 
 <div style="border: 1px solid black; display: inline-block; padding: 15px; margin: 15px; margin-left: 0px;" markdown="1">
 ![hid_out histograms]({{ site.url }}/assets/rnn_and_tensorboard/hid_out_hist.png)
 </div>
 
-So, how did this happen? TensorBoard gives us a different view of how these activations evolved through training:
+So, how did this happen? TensorBoard provides us a second view of how these activations evolved through training:
 
 <div style="border: 1px solid black; display: inline-block; padding: 15px; margin: 15px; margin-left: 0px;" markdown="1">
 ![rnn_out distributions]({{ site.url }}/assets/rnn_and_tensorboard/rnn_out_trajectory.png)
 </div>
 
-Each level of shading in these plots represents +/-0.5sigma, +/-1sigma, +/-1.5sigma and then min/max. The picture is starting to come together. It looks like we had exploding gradients at the beginning of training. 3 of the 4 scenarios all exploded. But the learning rate is much lower for the upper-left plot, so it doesn't recover during our training. It probably makes sense to add gradient norm clipping.
+Each level of shading in these plots represents +/-0.5sigma, +/-1sigma, +/-1.5sigma and then min/max. The picture is starting to come together. It looks like we had exploding gradients at the beginning of training. 3 of the 4 scenarios exploded. But the learning rate is much lower for the upper-left plot, so it doesn't recover during our training. It probably makes sense to add gradient norm clipping.
 
-So, we've found training parameters that seems to be working well. Let's look at the word embedding this RNN has learned. TensorBoard lets you expore embeddings in 3D:
+Now that we've found training parameters that work well, let's look at the learned word embeddings. TensorBoard lets you interactively expore embeddings in 3D:
 
 <div style="border: 1px solid black; display: inline-block; padding: 15px; margin: 15px; margin-left: 0px;" markdown="1">
 ![t-SNE visualization]({{ site.url }}/assets/rnn_and_tensorboard/t-sne.gif)
 </div>
 
+This visualization provides immediate feedback that the model is on the right track: showing clear word relationships within clusters. And, aside from being very productive, TensorBoard makes it fun to explore the results and gain beter insight into your model.  
+
 ## Wrap-Up
 
-It is easy to underestimate how important a good machine learning visualization tool is. Even a simple model (like I presented here) can fall short in complicated ways. You may not even realize your model is underperforming. TensorBoard dramatically reduces the energy required to dig in and really understand what is going on.
+It is easy to underestimate how important a good machine learning visualization tool is. Even a simple model (like I presented here) can fall short in complicated ways. You may not even realize your model is underperforming. TensorBoard dramatically reduces the energy required to dig in and understand what is going on.
 
 I hope this post inspires you to give both TensorFlow and TensorBoard a try. A short Python Notebook in the [GitHub repository](https://pat-coady.github.io/rnn/) implements everything you see here.
 
