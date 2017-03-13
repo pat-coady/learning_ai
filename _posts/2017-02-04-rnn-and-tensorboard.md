@@ -68,7 +68,7 @@ Can we figure out what happened? Take a look at some histograms:
 ![rnn_out histograms]({{ site.url }}/assets/rnn_and_tensorboard/rnn_out.png)
 </div>
 
-The histograms layer "towards you" to show the evolution of the training. In the upper-left plot, we can see many of the RNN activations (i.e. tanh outputs) are pegged at +/-1.
+The histograms layer towards you to show the evolution of the training. In the upper-left plot, we can see many of the RNN activations (i.e. tanh outputs) are pegged at +/-1.
 
 The situation is even worse at the hidden layer - almost all the activations are saturated. Back-propagation isn't going to be able to make it through this (again, the upper-left plot):
 
