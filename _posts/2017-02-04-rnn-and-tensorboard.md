@@ -101,5 +101,3 @@ I hope this post inspires you to give both TensorFlow and TensorBoard a try. A s
 {% if site.disqus.shortname %}
   {% include disqus_comments.html %}
 {% endif %}
-
-
