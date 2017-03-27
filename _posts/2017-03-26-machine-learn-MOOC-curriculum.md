@@ -126,7 +126,7 @@ At this point, you have built the foundation you need to head off in many differ
 
 Most importantly, put your knowledge into practice. This is where real learning takes place: solving problems where a professor hasn't carefully planned your path. Better yet, find a job where you can work with experts in the field. While you are looking for a job, do some challenging projects to highlight your abilities. Document your work and post your code.
 
-This surely seems intimidating, but just make forward progress each day and you'll be there before you know it. I hope you enjoy your journey as much as I have enjoyed mine.
+This surely seems intimidating, but make forward progress each day and you'll be there before you know it. I hope you enjoy your journey as much as I have enjoyed mine.
 
 {% if site.disqus.shortname %}
   {% include disqus_comments.html %}
