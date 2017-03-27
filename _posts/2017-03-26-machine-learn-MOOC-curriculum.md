@@ -98,7 +98,7 @@ Here are just a few things you will understand deeply after completing this cour
 
 The return on your effort in this course is very high.
 
-## [Neural Networks for Machine Learning](https://www.coursera.org/learn/neural-networks) (University of Toronto / Coursera)
+### [Neural Networks for Machine Learning](https://www.coursera.org/learn/neural-networks) (University of Toronto / Coursera)
 
 This is an advanced course on Neural Networks taught by Professor Geoff Hinton. You can breeze through this course and earn a certificate, but that is not your objective. There are only a few programming assignments, and by now these will be very easy for you. To get the most out of this course you will need to invent a few side projects - some ideas:
 
@@ -110,7 +110,7 @@ This is an advanced course on Neural Networks taught by Professor Geoff Hinton. 
 
 I found the book [Deep Learning](http://www.deeplearningbook.org/) to be an excellent companion to this course. I recommend that you read this book cover-to-cover. Also, read the papers that Professor Hinton has attached to the course material.
 
-### [Probabilistic Graphical Models](https://www.coursera.org/specializations/probabilistic-graphical-models)
+### [Probabilistic Graphical Models](https://www.coursera.org/specializations/probabilistic-graphical-models) (Stanford / Coursera)
 
 This is the only course I was uncertain about recommending. It is an important topic, and this is one of only a few graduate-level MOOCs. But the course textbook is very hard to read and the lectures are not the same quality as the other courses in this curriculum (which isn't a huge knock, this is a best of the best list). There are very few students participating in the forums and no official course TAs or mentors. My guess is many students throw in the towel on this one. 
 
