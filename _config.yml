@@ -27,6 +27,9 @@ github_username:  pat-coady
 disqus:
     shortname: https-pat-coady-github-io
 
+# Google services
+google_analytics: UA-96364586-1  
+
 # Build settings
 markdown: kramdown
 #theme: minima
