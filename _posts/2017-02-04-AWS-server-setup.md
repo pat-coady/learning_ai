@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "TensorFlow + Keras on AWS"
+title: "Amazon EC2 GPU Machine Learning Setup"
 date: 2017-02-04 16:28:38 -0700
 categories: projects
 comments: true
