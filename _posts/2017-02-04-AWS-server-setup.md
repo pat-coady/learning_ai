@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Amazon EC2 GPU Machine Learning Setup"
+title: "Amazon EC2 Machine Learning Setup (GPU)"
 date: 2017-02-04 16:28:38 -0700
 categories: projects
 comments: true
