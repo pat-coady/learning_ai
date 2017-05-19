@@ -13,7 +13,7 @@ Reinforcement Learning (RL) is what first sparked my interest in AI. I'm halfway
 
 The Humanoid-v1 model in OpenAI Gym is a complex physics-based model. The environment receives an action in $$\mathbb{R}^{17}$$ and returns an observation in $$\mathbb{R}^{376}$$. The action vector controls 17 different joints in the humanoid model. I haven't determined what the observations are measuring. It takes humans a couple of years to learn to walk, and many more to master running. 
 
-Behavior cloning is a classic supervised learning problem. I ran 250 simulations of the expert Humanoid in the OpenAI Gym environment and running away. I captured all observation-action pairs from these rollouts and trained two models:
+Behavior cloning is a classic supervised learning problem. I ran 250 simulations of the expert Humanoid running in the OpenAI Gym environment. I captured all observation-action pairs from these rollouts and trained two models:
 
 1. Linear Regression
 2. Single-layer NN
