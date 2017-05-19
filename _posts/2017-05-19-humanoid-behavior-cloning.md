@@ -42,9 +42,9 @@ It seems our problems were solved by only addressing item 1.
 
 I was quite surprised that item 2 above (distribution mismatch) didn't cause a problem. Here is the potential problem. Our policy actions will be slightly different than the expert actions. Perhaps our humanoid takes a slightly short step. And then another short step. Now her body gets ahead of her feet, and she tumbles down. But we never saw this mistake in training since we were always observing an expert. So we never learned to recover from getting ahead of our feet.
 
-There are some ways of addressing this. One well-known method is [DAgger](https://arxiv.org/pdf/1011.0686.pdf). The basic idea is to follow your learned policy, but to annotate it with the expert actions. Then you re-train with this additional data, repeated until you have a good policy. (I implemented DAgger, and it didn't improve the learning rate in this problem significantly.)
+There are some ways of addressing this. One well-known method is [DAgger](https://arxiv.org/pdf/1011.0686.pdf). The basic idea is to follow your learned policy, but to annotate it with the expert actions. Then you re-train with this additional data, repeating until you have a good policy. (I implemented DAgger, and it didn't improve the learning rate in this problem significantly.)
 
-Regarding item 3 above, that the observations don't give us enough information about our present state to act appropriately. This doesn't seem likely problem in our case. The observation vector is in $$\mathbb{R}^{376}$$, so it is encoding a lot of information. Also, if we were missing critical state information, it would be nearly impossible to succeed without maintaining an internal model of the dynamics (which we aren't doing).
+Regarding item 3 above, that the observations don't give us enough information about our present state to act appropriately. This doesn't seem likely in our case. The observation vector is in $$\mathbb{R}^{376}$$, so it is encoding a lot of information. Also, if we were missing critical state information, it would be nearly impossible to succeed without maintaining an internal model of the dynamics (which we aren't doing).
 
 ## Concluding Thoughts
 
