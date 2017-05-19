@@ -23,7 +23,7 @@ I recently completed Geoff Hinton's Neural Network course (excellent, by the way
 
 The TensorFlow API was intuitive and relatively easy to learn. The installation documentation is great, including instructions for installing with GPU support. Another bonus are the terrific tutorials and examples on the TensorFlow site.
 
-If you want ultimate flexibility and control over your neural networks, using TensorFlow is the right tool. I've never used Theano, so I can't offer a comparison on performance or ease of use. But it seems the TensorFlow ecosystem is growing quickly (including support for Android, iOS and Raspberry Pi). If you are machine learning practitioner that uses established neural network archtectures, then I would would recommend using Keras.
+If you want ultimate flexibility and control over your neural networks, using TensorFlow is the right tool. I've never used Theano, so I can't offer a comparison on performance or ease of use. But it seems the TensorFlow ecosystem is growing quickly (including support for Android, iOS and Raspberry Pi). If you are machine learning practitioner that uses established neural network archtectures, then I would recommend using Keras.
 
 {% if site.disqus.shortname %}
   {% include disqus_comments.html %}

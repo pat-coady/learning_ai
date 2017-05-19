@@ -5,7 +5,7 @@ date: 2017-03-09 12:00:00 -0700
 categories: projects
 comments: true
 ---
-In my previous post I used a [Continuous Bag-of-Words (CBOW)](https://arxiv.org/pdf/1301.3781.pdf) model to learn word vectors. For this project I built a RNN language model so I could experiment with RNN cell types and training methods. Because I recently watched a great TensorBoard demo from the [TensorFlow Dev Summit](https://events.withgoogle.com/tensorflow-dev-summit/), I've also added extensive TensorBoard visualization to this project.
+In my previous post I used a model similar to [Skip-Gram](https://arxiv.org/pdf/1310.4546.pdf) to learn word vectors. For this project I built a RNN language model so I could experiment with RNN cell types and training methods. Because I recently watched a great TensorBoard demo from the [TensorFlow Dev Summit](https://events.withgoogle.com/tensorflow-dev-summit/), I've also added extensive TensorBoard visualization to this project.
 
 This post is only a brief summary. For a more detailed write-up and project code, go to the [GitHub Project Page](https://pat-coady.github.io/rnn/).
 

@@ -119,7 +119,8 @@ To make the course worthwhile, you must take it with the "Honors" option. The ho
 At this point, you have built the foundation you need to head off in many different directions and excel. From here, you may want to choose a specialization and take a couple of additional courses. Are you more interested in machine learning or AI? The distinction between the two being fuzzy sometimes. Here are some suggestions:
 
 - [CS231n](http://cs231n.stanford.edu/): Convolutional NN for Visual Recognition
-- [CS224n](http://web.stanford.edu/class/cs224n/): NLP with Deep Learning 
+- [CS224n](http://web.stanford.edu/class/cs224n/): NLP with Deep Learning
+	- [CS224n Lecture Videos](https://www.youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6)
 - [Reinforcement Learning](https://www.youtube.com/watch?v=2pWv7GOvuf0): David Silver
 - [CS294](http://rll.berkeley.edu/deeprlcourse/): Deep Reinforcement Learning
 - Read [Russell/Norvig](http://aima.cs.berkeley.edu/): chose exercises to complete
