@@ -31,7 +31,7 @@ There is nothing fancy here. This model just minimizes the mean-squared-error ov
 There are several possible explanations for the failure of our first behavior cloning attempt:
 
 1. Policy-model capacity is insufficient: The action needs to be a non-linear function of several observation variables.
-2. Distribution mismatch: The learned policy will be slightly different than the expert policy. These errors will accumulate during the policy trajectory.
+2. Distribution mismatch: The learned policy will be slightly different than the expert policy. These errors will accumulate during the state trajectory.
 3. Non-Markovian observations: Perhaps the observations do not give us enough information about the environment state. For instance, maybe the body part locations are known, but not their velocity. Our model only takes into account a single observation when choosing an action. We don't consider our previous action or observations.
 
 Let's address the first possibility head-on by implementing a policy model with more capacity. We start with a single-hidden-layer NN. The hidden layer has 54 nodes with tanh activations. The output layer is linear, and the loss function is mean-squared-error. No over-fitting was observed on a validation set, so no regularization was added. How do we do?
