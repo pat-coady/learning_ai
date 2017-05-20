@@ -149,18 +149,18 @@ a {
 
   @include large {
     max-width: 64rem;
-    padding: 2rem 6rem;
+    padding: 2rem 4rem;
     margin: 0 auto;
     font-size: 1.1rem;
   }
 
   @include medium {
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
     font-size: 1.1rem;
   }
 
   @include small {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     font-size: 1rem;
   }
 
@@ -318,8 +318,9 @@ a {
 }
 
 .site-footer {
-  padding-top: 2rem;
-  margin-top: 2rem;
+  padding-top: 0rem;
+  padding-bottom: 2rem;
+  margin-top: 0rem;
   border-top: solid 1px $hr-border-color;
 
   @include large {

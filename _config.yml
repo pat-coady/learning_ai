@@ -6,6 +6,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pat-coady.github.io/"
 github_username: pat-coady
 twitter_username: CoadyPatrick
+linkedin_username: patrick-coady-76995823
 disqus:
     shortname: https-pat-coady-github-io
 
