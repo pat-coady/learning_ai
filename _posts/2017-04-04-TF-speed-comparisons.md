@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "TF Speed: Build from Source and Hand-Built GRU"
+title: "TensorFlow Speed: Build from Source and Hand-Built GRU"
 date: 2017-04-04 12:00:00 -0700
 categories: projects
 comments: true
