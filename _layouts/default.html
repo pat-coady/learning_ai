@@ -38,6 +38,11 @@
           <i class="fa fa-github"></i> GitHub
         </a>
       {% endif %}
+      {% if site.gist_username %}
+        <a href="https://gist.github.com/{{ site.gist_username }}" style="padding: 1rem;">
+          <i class="fa fa-github-alt"></i> Gist
+        </a>
+      {% endif %}
       {% if site.linkedin_username %}
         <a href="https://linkedin.com/in/{{ site.linkedin_username }}" style="padding: 1rem;">
           <i class="fa fa-linkedin"></i> LinkedIn  

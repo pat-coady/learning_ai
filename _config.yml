@@ -5,6 +5,7 @@ description: My journey from IC designer to AI designer.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pat-coady.github.io/"
 github_username: pat-coady
+gist_username: pat-coady
 twitter_username: CoadyPatrick
 linkedin_username: patrick-coady-76995823
 disqus:
