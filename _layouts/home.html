@@ -4,25 +4,20 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-  
   {{ content }}
 
-  <ul class="post-list">
+  <ul style="list-style: none; padding-left: 0;">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        <h2 style="margin-bottom: 0;">
+          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
+        <h4 style="margin-top: 0;">
+        {{ post.date | date: "%b %-d, %Y" }}
+        </h4>
         {{ post.excerpt }}
       </li>
     {% endfor %}
   </ul>
-
-  <!-- remove RSS for now
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  -->
 
 </div>
