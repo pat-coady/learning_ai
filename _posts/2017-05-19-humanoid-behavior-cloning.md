@@ -40,11 +40,11 @@ Let's address the first possibility head-on by implementing a policy model with 
 
 It seems our problems were solved by only addressing item 1. 
 
-I was quite surprised that item 2 above (distribution mismatch) didn't cause a problem. This is why. Our policy actions will be slightly different than the expert actions. Perhaps our humanoid takes a slightly short step. And then another short step. Now her body gets ahead of her feet, and she tumbles down. But we never saw this mistake when observing the expert, so we never learned to recover from getting ahead of our feet.
+I was quite surprised that item 2 above (distribution mismatch) didn't cause a problem. This would typically be a problem because our policy actions will be slightly different than the expert actions. Perhaps our humanoid takes a slightly short step. And then another short step. Now her body gets ahead of her feet, and she tumbles down. But we never saw this mistake when observing the expert, so we never learned to recover from getting ahead of our feet.
 
 There are several ways of addressing distribution mismatch. One well-known method is [DAgger](https://arxiv.org/pdf/1011.0686.pdf). The basic idea is to follow your learned policy and annotate it with the expert actions. Then you re-train with this additional data, repeating until you have a good policy. (I implemented DAgger, and it didn't improve the learning rate in this problem significantly.)
 
-Finally, regarding item 3, it doesn't seem our observations are providing insufficient state information. If we were missing critical state information, it would be nearly impossible to succeed without maintaining an internal model of the dynamics (which we aren't doing).
+Finally, regarding item 3, it seems our observations are providing sufficient state information. If we were missing critical state information, it would be nearly impossible to succeed without maintaining an internal model of the dynamics (which we aren't doing).
 
 ## Conclusion
 
