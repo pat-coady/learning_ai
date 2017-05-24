@@ -178,7 +178,6 @@ c.NotebookApp.port = 8888
 c.NotebookApp.open_browser = False
 c.NotebookApp.certfile = '/home/ubuntu/.jupyter/mycert.pem'
 c.NotebookApp.keyfile = '/home/ubuntu/.jupyter/mykey.key'
-c.IPKernelApp.pylab = 'inline' # so matplotlib plots are inline with notebook:wq
 {% endhighlight python %}
 
 Finally, a couple quick commands to polish off Jupyter install:
@@ -248,6 +247,13 @@ Add this to end of your .bashrc:
 {% highlight bash %}
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64"
 export CUDA_HOME=/usr/local/cuda
+{% endhighlight bash %}
+
+Finally, add this to your /etc/ssh/ssh_config file (this sends a "ping" every 2 minutes to keep your ssh connection alive):
+
+{% highlight bash %}
+# Fix port 20 Broken Pipe issue.
+ServerAliveInterval 120
 {% endhighlight bash %}
 
 ## Test the Installation
