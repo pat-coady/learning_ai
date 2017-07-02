@@ -42,7 +42,7 @@ The speed improvement was 1.8x on a CPU (noted as 'laptop' in the table):
 |**GRUCell** | 390s | **258s** | 240s | **228s** | 
 |**Hand-Built GRU** | 339s | **187s** | 210s | **209s** |
 |---
-{:.mbtablestyle}
+
 **Table 1.** Comparison of run times. **laptop** = Intel i5 w/ Linux. **GPU** = AWS EC2 p2.xlarge instance (1 x NVIDIA K80). **pip** = TensorFlow install with pip. **source** = Build from source using `bazel`.
 
 The speed improvement on a GPU machine was negligible. The CUDA and cuDNN libraries from NVIDIA are already compiled and optimized for their GPU. 
@@ -57,7 +57,7 @@ As you probably noted above, the hand-built GRU provided an additional performan
 |**GRUCell** | 258s | 228s |
 |**Hand-Built GRU** | **187s** | **209s** |
 |---
-{:.mbtablestyle}
+
 **Table 2.** 1.4x improvement by hand-crafting a GRU-based RNN vs. using `tf.contrib.rnn.GRUCell` and `tf.nn.dynamic_rnn`.
 
 Here is the code for a hand-built GRU:
