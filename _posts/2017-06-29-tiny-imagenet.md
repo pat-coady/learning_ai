@@ -245,7 +245,7 @@ The receptive field after the 4th convolution is 11x11 and there is more fine-gr
 
 ## Conclusion
 
-The amazing achievements of convnets are well-publicized. It is extremely satisfying to start with a blank editor screen and build and train one yourself. With inexpensive cloud compute resources, and free software like Python and TensorFlow, this technology accessible to almost anyone. 
+The amazing achievements of convnets are well-publicized. It is extremely satisfying to start with a blank text editor and build and train one yourself. With inexpensive cloud compute resources, and free software like Python and TensorFlow, this technology accessible to almost anyone. 
 
 By building and tuning your own convnet, you better understand their capabilities, and their shortcomings.
 
