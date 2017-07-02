@@ -5,7 +5,7 @@ date: 2017-06-29 12:00:00 -0700
 categories: projects
 comments: true
 ---
-I recommend that any aspiring machine learning designer construct and train a deep convnet. I used TensorFlow to implement and train a deep network on the [Tiny ImageNet](https://tiny-imagenet.herokuapp.com/) dataset. Tiny ImageNet spans 200 image classes with 500 training examples per class. I also implemented notebooks to view predictions vs. true labels, saliency maps, and visualize the convolution kernels.
+I recommend that any aspiring machine learning designer construct and train a deep convolutional neural network (convnet). I used TensorFlow to implement and train a deep network on the [Tiny ImageNet](https://tiny-imagenet.herokuapp.com/) dataset. Tiny ImageNet spans 200 image classes with 500 training examples per class. I also implemented notebooks to view predictions vs. true labels, saliency maps, and visualize the convolution kernels.
 
 ## Introduction
 
