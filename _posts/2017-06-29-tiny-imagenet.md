@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Tiny ImageNet"
+title: "VGGNet and Tiny ImageNet"
 date: 2017-06-29 12:00:00 -0700
 categories: projects
 comments: true
 ---
-I recommend that any aspiring machine learning designer construct and train a deep convolutional neural network (convnet). I used TensorFlow to implement and train a deep network on the [Tiny ImageNet](https://tiny-imagenet.herokuapp.com/) dataset. Tiny ImageNet spans 200 image classes with 500 training examples per class. I also implemented notebooks to view predictions vs. true labels, saliency maps, and visualize the convolution kernels.
+In this post, I describe the results of implementing and training a variation of the [VGG-16](http://www.robots.ox.ac.uk/~vgg/research/very_deep/) convolutional neural network (convnet). The convnet is trained and evaluated on the [Tiny ImageNet](https://tiny-imagenet.herokuapp.com/) dataset. Tiny ImageNet spans 200 image classes with 500 training examples per class. The post also explores alternatives to the cross-entropy loss function. And, finally, I show pictures with their predictions vs. true labels, saliency maps, and visualizations the convolution filters.
 
 ## Introduction
 
@@ -245,9 +245,7 @@ The receptive field after the 4th convolution is 11x11 and there is more fine-gr
 
 ## Conclusion
 
-The amazing achievements of convnets are well-publicized. It is extremely satisfying to start with a blank text editor and build and train one yourself. With inexpensive cloud compute resources, and free software like Python and TensorFlow, this technology accessible to almost anyone. 
-
-By building and tuning your own convnet, you better understand their capabilities, and their shortcomings.
+The amazing achievements of convnets are well-publicized. By building and tuning your own convnet, you better understand their capabilities, and their shortcomings. With inexpensive cloud compute resources, and free software like Python and TensorFlow, this technology is accessible to almost anyone. 
 
 As always, I hope you've found this post useful. All the code is available in my GitHub repository. Please comment with any questions or suggestions for improvement.
 
