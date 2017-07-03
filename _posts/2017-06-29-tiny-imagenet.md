@@ -56,7 +56,7 @@ Here is a summary of the training settings:
     * 3 learning rate decays before training is terminated
 * L2 regularization on all layers (single regularization coefficient)
 * 50% dropout on fully-connected layers
-* [He initialization](https://arxiv.org/pdf/1502.01852v1.pdf) on all weight matrices: $$\frac{\sqrt{2}}{fan\mbox{-}in}$$
+* [He initialization](https://arxiv.org/pdf/1502.01852v1.pdf) on all weight matrices: $$\sqrt{\frac{2}{fan\mbox{-}in}}$$
 * Optimizer: SGD with Nesterov Momentum (momentum = 0.9)
 * batch-size = 64
 
@@ -188,7 +188,7 @@ Below, the bikini prediction is a reasonable mistake. Cases like this make clear
 
 <div style="border: 1px solid black; display: inline-block; font-size: 14px; padding: 15px; margin: 0px;" markdown="1">
 ![Kernel Visualization 2]({{ site.url }}/assets/tiny_imagenet/pred_sal0.png)  
-**Figure 2. Actual label:** volleyball  
+**Figure 2.** Volleyball.  
 **Top 5 predictions:** ['bikini', 'pole', 'miniskirt', 'volleyball', 'swimming trunks']
 </div>
 
@@ -196,7 +196,7 @@ An excellent example where the saliency map focuses on the dark body of the blac
 
 <div style="border: 1px solid black; display: inline-block; font-size: 14px; padding: 15px; margin: 0px;" markdown="1">
 ![Kernel Visualization 2]({{ site.url }}/assets/tiny_imagenet/pred_sal1.png)  
-**Figure 3. Actual label:** black widow  
+**Figure 3.** Black widow.  
 **Top 5 predictions:** ['black widow', 'cockroach', 'tarantula', 'scorpion', 'fly']
 </div>
 
@@ -204,7 +204,7 @@ This zoom in of the wooden spoons do resemble frying pans.
 
 <div style="border: 1px solid black; display: inline-block; font-size: 14px; padding: 15px; margin: 0px;" markdown="1">
 ![Kernel Visualization 2]({{ site.url }}/assets/tiny_imagenet/pred_sal5.png)  
-**Figure 4. Actual label:** wooden spoon  
+**Figure 4.** Wooden spoon.  
 **Top 5 predictions:** ['frying pan', 'drumstick', 'nail', 'wooden spoon', 'reel']
 </div>
 
@@ -212,7 +212,7 @@ Examples like the one below are amazing. All five predictions are reasonable. An
 
 <div style="border: 1px solid black; display: inline-block; font-size: 14px; padding: 15px; margin: 0px;" markdown="1">
 ![Kernel Visualization 2]({{ site.url }}/assets/tiny_imagenet/pred_sal4.png)  
-**Figure 5. Actual label:** scorpion  
+**Figure 5.** Scorpion.  
 **Top 5 predictions:** ['scorpion', 'tailed frog', 'American lobster', 'cockroach', 'spiny lobster']
 </div>
 
@@ -220,7 +220,7 @@ Below is one more nice example where all five predictions are somewhat reasonabl
 
 <div style="border: 1px solid black; display: inline-block; font-size: 14px; padding: 15px; margin: 0px;" markdown="1">
 ![Kernel Visualization 2]({{ site.url }}/assets/tiny_imagenet/pred_sal6.png)  
-**Figure 6. Actual label:** potpie  
+**Figure 6.** Potpie.  
 **Top 5 predictions:** ['potpie', 'plate', 'mashed potato', 'guacamole', 'meat loaf']
 </div>
 
