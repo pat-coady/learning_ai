@@ -62,7 +62,7 @@ Here is a summary of the training settings:
 
 A few key points:
 
-1. I've found SGD with Nesterov momentum works as well as, or better, than ADAM or RMSprop. The hyper-parameters for SGD are less finicky to set, and it seems to learn as quickly as ADAM.
+1. I've found SGD with Nesterov momentum works as well as, or better than ADAM or RMSprop. The hyper-parameters for SGD are less finicky to set, and it seems to learn as quickly as ADAM.
 2. For ReLU layers, [He initialization](https://arxiv.org/pdf/1502.01852v1.pdf) works excellently. The network implemented here has 13 layers of weight matrices. With He initialization, my activations were well-bounded right to the last layer. This initialization eliminated the need for batch normalization.
 3. Learning rate decay is almost universally applied in published papers, and for a good reason. The plot below illustrates the significant accuracy improvement after the first learning rate decay. With a high learning rate, you start to overfit your mini-batches as you get close to a good local minimum. By decaying the learning rate, each mini-batch makes a smaller "vote" on which way to move.
 
