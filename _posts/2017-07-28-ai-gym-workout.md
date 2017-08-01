@@ -51,7 +51,7 @@ for iteration in range(N):
     policy.update(states, actions, advantages)
     value_function.fit(data, data_old)
 {% endhighlight %}
-<body><strong>Algorithm 1.</strong> Main training procedure</body>
+<body><br/><strong>Algorithm 1.</strong> Main training procedure</body>
 
 The main procedure in *Algorithm 1* is straightforward. The loop starting on `line 8` captures M policy roll outs. Sequences of `states`, `actions`, and `rewards` are collected from each roll out and appended to the `data` batch. `Line 10` add value estimates to each visited state from the roll outs. With predicted state-values in hand, we calculate the advantages and add these to the data set in `line 11`. The advantage of a state-action is how much better (or worse) an action performs than the expectation of present policy from the same state.
 
@@ -79,7 +79,7 @@ elif D_KL < 0.5 * KL_targ:
     if beta < 1 / 30:
         learn_rate = learn_rate * 1.5
 {% endhighlight %}
-<body><strong>Algorithm 2.</strong> Policy update (adapted from [2])</body>
+<body><br/><strong>Algorithm 2.</strong> Policy update (adapted from [2])</body>
 
 *Algorithm 2* details the policy update and is adapted from Heess et al. \[2\] (which they adapted from \[4\]). The key to the algorithm is storing the previous distribution $$\pi_{old}(a\vert s)$$ in `line 1` before updating the policy parameters. With the old policy stored, we can compute $$D_{KL}$$ as we make policy gradient updates.
 
