@@ -5,7 +5,7 @@ date: 2017-07-28 12:00:00 -0700
 categories: projects
 comments: true
 ---
-In a previous post, I described teaching my humanoid to walk by imitating a fellow humanoid. Here I give my humanoid the capability to learn on its own. The humanoid's only resources are the **Proximal Policy Optimization** algorithm, two randomly initialized neural networks, and a teacher that rewards forward progress. I also train nine other simulated robots to thrive in their environments: a swimming snake, a 4-legged "ant," a reaching robot arm, a hopping robot, and several others. I have uploaded the results to the [OpenAI Gym](https://gym.openai.com/envs#mujoco) evaluation scoreboards, and the algorithm achieves several top scores.
+In a previous post, I described teaching a humanoid to walk by imitating a fellow humanoid. Here I give my humanoid the capability to learn on its own. The humanoid's only resources are the **Proximal Policy Optimization** algorithm, two randomly initialized neural networks, and a teacher that rewards forward progress. I also train nine other simulated robots to thrive in their environments: a swimming snake, a 4-legged "ant," a reaching robot arm, a hopping robot, and several others. I have uploaded the results to the [OpenAI Gym](https://gym.openai.com/envs#mujoco) evaluation scoreboards, and the algorithm achieves several top scores.
 
 ## Introduction
 
