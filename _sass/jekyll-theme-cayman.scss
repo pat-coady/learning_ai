@@ -207,6 +207,7 @@ a {
     border-radius: 0.3rem;
 
     > code {
+      display: inline-block;
       padding: 0;
       margin: 0;
       font-size: 0.9rem;
@@ -240,7 +241,7 @@ a {
 
   pre code,
   pre tt {
-    display: inline;
+    display: inline-block;
     max-width: initial;
     padding: 0;
     margin: 0;
