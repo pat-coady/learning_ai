@@ -217,7 +217,8 @@ a {
   }
 
   .highlight {
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
 
     pre {
       margin-bottom: 0;
@@ -227,7 +228,7 @@ a {
 
   .highlight pre,
   pre {
-    padding: 0.8rem;
+    padding: 0;
     overflow: auto;
     font-size: 0.9rem;
     line-height: 1.45;
