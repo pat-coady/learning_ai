@@ -2,8 +2,10 @@
 layout: page
 title: About Me
 ---
-For 20 years, I designed and developed analog and mixed-signal integrated circuits (ICs) at [Maxim Integrated](https://www.maximintegrated.com/). I started as an IC designer and then led a small design team. Then I became engineering director for a large business group with locations around the world. No matter my role, I always enjoyed the challenge of designing complex electronics using only transistors, resistors, and capacitors. It was especially rewarding to see these products go into mass-production, solve critical customer problems, and sell in the tens of millions. I was fortunate to have great mentors and teammates during an exciting time in the semiconductor industry.
+After a rewarding career developing integrated circuits (ICs), I resolved to move into the field of artificial intelligence / machine learning. I am inspired by both the progress and the potential of AI.
 
-Now I am devoting my energies towards a different field: artificial intelligence (AI) and machine learning. I am inspired by both the progress and the potential of AI. It is energizing to enter a field where the major breakthroughs are recent, and new applications are around every corner.
+My sole focus over the past year has been building expertise in AI through coursework and independent projects. After establishing solid fundamentals, I have completed advanced courses and projects in reinforcement learning, machine vision, NLP, and probabilistic graphical models.
 
-To this end, I am taking courses, reading books and journals, and completing projects. My goal is to build expertise quickly and join a team where I can make a big difference – ideally combining my newly acquired AI expertise with my previous electronics engineering experience.
+Throughout my career, I have made a significant impact in many different roles. As a circuit designer, I creatively solved tough challenges to bring successful products to market. As a project leader, I led large and diverse teams to develop complex system ICs. Finally, as executive director of engineering, I built and managed a world-class design group for our company’s new mobile audio business - a business that still thrives today.
+
+I am excited for a similarly impactful career using AI to solve meaningful challenges.
