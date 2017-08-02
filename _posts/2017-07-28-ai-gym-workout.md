@@ -135,6 +135,8 @@ These properties lead to learning that naturally decreases exploration and incre
 
 ## Training
 
+I have posted notebooks with interesting training curves for each environment on my [Gist Page](https://gist.github.com/pat-coady).
+
 ### Optimizer
 
 The ADAM optimizer is used to train both the value function and policy networks. I compared the performance of the ADAM optimizer to vanilla SGD and SGD with Nesterov Momentum. For this application, ADAM gave the best training results.
