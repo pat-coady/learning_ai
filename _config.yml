@@ -3,13 +3,13 @@ email: pcoady@alum.mit.edu
 author: Patrick Coady
 description: My journey from IC designer to AI designer.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://pat-coady.github.io/"
+url: "http://learningai.io/"
 github_username: pat-coady
 gist_username: pat-coady
 twitter_username: CoadyPatrick
 linkedin_username: patrick-coady-76995823
 disqus:
-    shortname: https-pat-coady-github-io
+    shortname: http-learningai-io
 
 google_analytics: UA-96364586-1
 
