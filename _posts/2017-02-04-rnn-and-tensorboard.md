@@ -7,7 +7,7 @@ comments: true
 ---
 In my previous post I used a model similar to [Skip-Gram](https://arxiv.org/pdf/1310.4546.pdf) to learn word vectors. For this project I built a RNN language model so I could experiment with RNN cell types and training methods. Because I recently watched a great TensorBoard demo from the [TensorFlow Dev Summit](https://events.withgoogle.com/tensorflow-dev-summit/), I've also added extensive TensorBoard visualization to this project.
 
-This post is only a brief summary. For a more detailed write-up and project code, go to the [GitHub Project Page](http://learningai.io/rnn/).
+This post is only a brief summary. For a more detailed write-up and project code, go to the [GitHub Project Page](https://learningai.io/rnn/).
 
 ## Background
 
@@ -96,7 +96,7 @@ This visualization provides immediate feedback that the model is on the right tr
 
 It is easy to underestimate how important a good machine learning visualization tool is. Even a simple model, like I presented here, can fall short in complicated ways. You may not even realize your model is under-performing. TensorBoard dramatically reduces the energy required to dig in and understand what's going on.
 
-I hope this post inspires you to give both TensorFlow and TensorBoard a try. A short Python Notebook in the [GitHub repository](http://learningai.io/rnn/) implements everything you see here.
+I hope this post inspires you to give both TensorFlow and TensorBoard a try. A short Python Notebook in the [GitHub repository](https://learningai.io/rnn/) implements everything you see here.
 
 {% if site.disqus.shortname %}
   {% include disqus_comments.html %}
