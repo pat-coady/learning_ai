@@ -9,7 +9,7 @@ I recently completed a project using TensorFlow to learn word vectors from 3 *Sh
 
 Here is what I found:
 
-[Sherlock Holmes Word Vectors](https://learningai.io/word2vec/)
+[Sherlock Holmes Word Vectors](https://pat-coady.github.io/word2vec/)
 
 ## Background
 
